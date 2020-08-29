@@ -1,0 +1,13 @@
+server:
+  port: 3344
+  
+spring:
+  application:
+    name: microserviceclouds-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Daixg591/microservicecloud-config.git #git仓库
+          username: Daixg591
+          password: gang971127
