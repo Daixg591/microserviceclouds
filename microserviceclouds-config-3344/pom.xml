@@ -6,18 +6,16 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>microserviceclouds-config-3344</artifactId>
-  
-  
 <dependencies>
+	<dependency>
+		<groupId>org.springframework.cloud</groupId>
+  		<artifactId>spring-cloud-config-server</artifactId>
+	</dependency>
 	<dependency>
   		<groupId>com.atguigu.springcloud</groupId>
   		<artifactId>microserviceclouds-api</artifactId>
   		<version>${project.version}</version>
   	</dependency>
-	<dependency>
-		<groupId>org.springframework.cloud</groupId>
-  		<artifactId>spring-cloud-config-server</artifactId>
-	</dependency>
   	<!-- https://mvnrepository.com/artifact/org.eclipse.jgit/org.eclipse.jgit -->
 	<dependency>
 	    <groupId>org.eclipse.jgit</groupId>
@@ -35,15 +33,15 @@
   		<artifactId>spring-cloud-starter-hystrix</artifactId>
   		<version>1.4.7.RELEASE</version>
   	</dependency>
+  	<!--  视频上添加 没事 我添加就有事
   	<dependency>
+		<groupId>org.springframework.cloud</groupId>
+		<artifactId>spring-cloud-starter-eureka</artifactId>
+		<version>1.4.7.RELEASE</version>
+	</dependency>-->
+	<dependency>
   		<groupId>org.springframework.cloud</groupId>
   		<artifactId>spring-cloud-starter-config</artifactId>
-  	</dependency>
-  	<!-- 标配 -->
-  	<dependency>
-  		<groupId>com.atguigu.springcloud</groupId>
-        <artifactId>microserviceclouds-api</artifactId>
-        <version>${project.version}</version>
   	</dependency>
   	<dependency>
   		<groupId>org.springframework.boot</groupId>
@@ -67,6 +65,5 @@
   		<groupId>org.springframework.boot</groupId>
     	<artifactId>spring-boot-devtools</artifactId>
   	</dependency>
-  	
   </dependencies>
 </project>
